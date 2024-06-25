@@ -1,0 +1,1367 @@
+[gd_scene load_steps=76 format=3 uid="uid://e5ij8qh5lemi"]
+
+[ext_resource type="Texture2D" uid="uid://dj4cmbjii4t5q" path="res://addons/img/Tiny Swords by Pixel Frog/Terrain/Ground/Tilemap_Flat.png" id="1_0kqt3"]
+[ext_resource type="Texture2D" uid="uid://b1kpie7bv4owx" path="res://addons/img/Tiny Swords by Pixel Frog/Terrain/Water/Water.png" id="1_2u14g"]
+[ext_resource type="Script" path="res://ui/main_menu.gd" id="1_e18nq"]
+[ext_resource type="Texture2D" uid="uid://c1nfdyv0bimig" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Banners/Banner_Horizontal.png" id="2_a153w"]
+[ext_resource type="Texture2D" uid="uid://or5s3naidcnb" path="res://addons/img/Tiny Swords by Pixel Frog/Terrain/Water/Foam/Foam.png" id="3_4bg8l"]
+[ext_resource type="Texture2D" uid="uid://dqjvg5ixx8ath" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Banners/Banner_Vertical.png" id="3_70gkr"]
+[ext_resource type="Texture2D" uid="uid://biptukfyd1nom" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Knights/Buildings/Castle/Castle_Blue.png" id="5_6hbwj"]
+[ext_resource type="Texture2D" uid="uid://bpasybq8ostnf" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Goblins/Buildings/Wood_House/Goblin_House.png" id="6_0p5i2"]
+[ext_resource type="Texture2D" uid="uid://du33tkxp7xsnq" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Banners/Carved_9Slides.png" id="6_6l11s"]
+[ext_resource type="Texture2D" uid="uid://dwn6v2ljxopjw" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="7_n5q4l"]
+[ext_resource type="Texture2D" uid="uid://cm8mqfgserovp" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Play_Button_Blue_3Slides.png" id="8_ggqh2"]
+[ext_resource type="Texture2D" uid="uid://qsatx80kalkk" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Goblins/Troops/Torch/Red/Torch_Red.png" id="8_xnvcm"]
+[ext_resource type="Texture2D" uid="uid://i6v7qgok08e" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Play_Button_Blue_3Slides_Pressed.png" id="9_t2oxv"]
+[ext_resource type="FontFile" uid="uid://btrtsnhxf857a" path="res://font/Taroca Regular.ttf" id="10_0h3yh"]
+[ext_resource type="Texture2D" uid="uid://ckdlcny36k23t" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Play_Button_Hover_3Slides.png" id="10_wjkfl"]
+[ext_resource type="Texture2D" uid="uid://dtr3n5355ewlw" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Credits_Button_Blue_3Slides.png" id="11_grvc6"]
+[ext_resource type="Texture2D" uid="uid://bcsgwbn3jjoy6" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Credits_Button_Hover_3Slides.png" id="12_fotjg"]
+[ext_resource type="Texture2D" uid="uid://k44636tnodbb" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Credits_Button_Blue_3Slides_Pressed.png" id="12_nh2kt"]
+[ext_resource type="Texture2D" uid="uid://dlax3pcy5ana2" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Exit_Button_Blue_3Slides.png" id="13_q8dtp"]
+[ext_resource type="Texture2D" uid="uid://hhn3ioggf5hv" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Exit_Button_Hover_3Slides.png" id="14_jjddn"]
+[ext_resource type="Texture2D" uid="uid://bov3wfy2bvspl" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Exit_Button_Blue_3Slides_Pressed.png" id="15_levvr"]
+[ext_resource type="Texture2D" uid="uid://b83vqffafwepr" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Settings_Button_Blue_3Slides.png" id="16_r5ixq"]
+[ext_resource type="Texture2D" uid="uid://cyl783icintp" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Settings_Button_Blue_3Slides_Pressed.png" id="17_ueuns"]
+[ext_resource type="Texture2D" uid="uid://d3fpog871i7jc" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Settings_Button_Hover_3Slides.png" id="18_5deqv"]
+[ext_resource type="AudioStream" uid="uid://brx51u8gh8dr1" path="res://addons/audio/Inteface SFX by ObsidyanX/confirm_style_2_001.ogg" id="21_c0ipd"]
+[ext_resource type="Texture2D" uid="uid://bbv4klajfgndp" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Banners/Carved_3Slides.png" id="21_y7syl"]
+[ext_resource type="Texture2D" uid="uid://dfuxvpp1k2oo0" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Close_Button_Red.png" id="22_6ae4g"]
+[ext_resource type="Texture2D" uid="uid://bscndtndgjwde" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Close_Button_Red_Pressed.png" id="23_jmmki"]
+[ext_resource type="Texture2D" uid="uid://7qf3lanhvuwu" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Close_Button_Hover.png" id="24_kh00r"]
+[ext_resource type="AudioStream" uid="uid://dkrmnc48ptqes" path="res://addons/audio/FREE Music Loop Bundle by Tallbeard Studios/Ludum Dare 38 - 09.ogg" id="26_51cau"]
+[ext_resource type="AudioStream" uid="uid://cg8ntafwypa34" path="res://addons/audio/Free Fantasy SFX Pack By TomMusic/Forest Day.ogg" id="27_i2obg"]
+[ext_resource type="Script" path="res://ui/volume_slider.gd" id="29_utt55"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pe33s"]
+texture = ExtResource("1_2u14g")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d242t"]
+texture = ExtResource("3_4bg8l")
+texture_region_size = Vector2i(192, 192)
+0:0/animation_columns = 8
+0:0/animation_speed = 10.0
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/animation_frame_3/duration = 1.0
+0:0/animation_frame_4/duration = 1.0
+0:0/animation_frame_5/duration = 1.0
+0:0/animation_frame_6/duration = 1.0
+0:0/animation_frame_7/duration = 1.0
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_s4vl2"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_d242t")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4ga7"]
+atlas = ExtResource("1_0kqt3")
+region = Rect2(320, 0, 192, 192)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e1n8i"]
+texture = SubResource("AtlasTexture_g4ga7")
+texture_margin_left = 64.0
+texture_margin_top = 64.0
+texture_margin_right = 64.0
+texture_margin_bottom = 64.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mrngj"]
+atlas = ExtResource("1_0kqt3")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dqrn6"]
+texture = SubResource("AtlasTexture_mrngj")
+texture_margin_left = 32.0
+texture_margin_top = 32.0
+texture_margin_right = 32.0
+texture_margin_bottom = 32.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tmfdd"]
+atlas = ExtResource("7_n5q4l")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xovvb"]
+atlas = ExtResource("7_n5q4l")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ctcla"]
+atlas = ExtResource("7_n5q4l")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3sp5n"]
+atlas = ExtResource("7_n5q4l")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ru7hn"]
+atlas = ExtResource("7_n5q4l")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2xnpb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tmfdd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xovvb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ctcla")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3sp5n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ru7hn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m31qr"]
+atlas = ExtResource("8_xnvcm")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ph08f"]
+atlas = ExtResource("8_xnvcm")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gscec"]
+atlas = ExtResource("8_xnvcm")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_psodw"]
+atlas = ExtResource("8_xnvcm")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_movyn"]
+atlas = ExtResource("8_xnvcm")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vqps8"]
+atlas = ExtResource("8_xnvcm")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kb3q"]
+atlas = ExtResource("8_xnvcm")
+region = Rect2(1152, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1ntp0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m31qr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ph08f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gscec")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_psodw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_movyn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vqps8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kb3q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_penk1"]
+texture = ExtResource("2_a153w")
+texture_margin_left = 32.0
+texture_margin_top = 22.0
+texture_margin_right = 32.0
+texture_margin_bottom = 42.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(32, 46, 128, 124)
+
+[sub_resource type="LabelSettings" id="LabelSettings_oyge5"]
+font = ExtResource("10_0h3yh")
+font_size = 75
+outline_size = 13
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6wu6q"]
+texture = ExtResource("3_70gkr")
+texture_margin_left = 22.0
+texture_margin_top = 34.0
+texture_margin_right = 22.0
+texture_margin_bottom = 30.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(36, 30, 120, 132)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ee8ix"]
+texture = ExtResource("6_6l11s")
+texture_margin_left = 64.0
+texture_margin_top = 64.0
+texture_margin_right = 64.0
+texture_margin_bottom = 64.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(0, 0, 192, 192)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xqkph"]
+texture = ExtResource("2_a153w")
+texture_margin_left = 32.0
+texture_margin_top = 18.0
+texture_margin_right = 32.0
+texture_margin_bottom = 42.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(32, 46, 128, 124)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fhjil"]
+texture = ExtResource("21_y7syl")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 16.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(0, 0, 192, 64)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wrfr1"]
+font = ExtResource("10_0h3yh")
+font_size = 19
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1img6"]
+line_spacing = 0.0
+font = ExtResource("10_0h3yh")
+font_size = 15
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e3p8c"]
+atlas = ExtResource("22_6ae4g")
+region = Rect2(7, 0, 50, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0og7x"]
+atlas = ExtResource("23_jmmki")
+region = Rect2(5, 0, 54, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a62x7"]
+atlas = ExtResource("24_kh00r")
+region = Rect2(7, 0, 50, 56)
+
+[sub_resource type="LabelSettings" id="LabelSettings_7tw35"]
+font = ExtResource("10_0h3yh")
+font_size = 35
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gapy3"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d02b2"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wj30p"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kbcdp"]
+texture = ExtResource("21_y7syl")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 16.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+region_rect = Rect2(0, 0, 192, 64)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6bc8l"]
+texture = ExtResource("21_y7syl")
+texture_margin_left = 32.0
+texture_margin_top = 16.0
+texture_margin_right = 32.0
+texture_margin_bottom = 16.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+region_rect = Rect2(0, 0, 192, 64)
+modulate_color = Color(0.619608, 0.529412, 0.462745, 1)
+
+[sub_resource type="Animation" id="Animation_cmi0p"]
+resource_name = "Credits"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Credits:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector2(74, 397), Vector2(384, 397)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Credits:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector2(539, 170), Vector2(384, 169.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Credits/VBoxContainer:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.9, 1),
+"transitions": PackedFloat32Array(0.3, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Credits/CloseCreditsButton:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.9, 1),
+"transitions": PackedFloat32Array(0.3, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Credits:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Credits:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_4mmcc"]
+resource_name = "Enter"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Menu:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector2(326, 56), Vector2(326, 397)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Menu:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector2(413, 328), Vector2(413, 180)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Menu/VBoxContainer:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.9, 1),
+"transitions": PackedFloat32Array(0.3, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Menu:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_dr7kh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Credits:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(384, 397)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Credits:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(384, 169.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Credits/VBoxContainer:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Credits/CloseCreditsButton:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Menu:size")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(326, 352)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Menu:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(413, 180)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Menu/VBoxContainer:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Menu:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Credits:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Credits:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Settings:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(384, 169.5)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Settings:size")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(384, 397)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Settings/CloseSettingsButton:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Settings/VBoxContainer:modulate")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Settings:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Settings:visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_as8rd"]
+resource_name = "Settings"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Settings:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector2(539, 170), Vector2(384, 169.5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Settings:size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector2(74, 397), Vector2(384, 397)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Settings/CloseSettingsButton:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.9, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Settings/VBoxContainer:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.9, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Settings:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.2, 0.4),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Settings:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3icaw"]
+_data = {
+"Credits": SubResource("Animation_cmi0p"),
+"Enter": SubResource("Animation_4mmcc"),
+"RESET": SubResource("Animation_dr7kh"),
+"Settings": SubResource("Animation_as8rd")
+}
+
+[node name="MainMenu" type="Control"]
+layout_direction = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e18nq")
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_pe33s")
+
+[node name="TileMap" type="TileMap" parent="Background"]
+position = Vector2(-38, -41)
+scale = Vector2(1.06399, 1.13841)
+tile_set = SubResource("TileSet_s4vl2")
+format = 2
+layer_0/tile_data = PackedInt32Array(65537, 0, 0, 131073, 0, 0, 196609, 0, 0, 262145, 0, 0, 327681, 0, 0, 393217, 0, 0, 458753, 0, 0, 524289, 0, 0, 65538, 0, 0, 131074, 0, 0, 196610, 0, 0, 262146, 0, 0, 327682, 0, 0, 393218, 0, 0, 458754, 0, 0, 524290, 0, 0, 65539, 0, 0, 131075, 0, 0, 196611, 0, 0, 262147, 0, 0, 327683, 0, 0, 393219, 0, 0, 458755, 0, 0, 524291, 0, 0, 65540, 0, 0, 131076, 0, 0, 196612, 0, 0, 262148, 0, 0, 327684, 0, 0, 393220, 0, 0, 458756, 0, 0, 524292, 0, 0, 65541, 0, 0, 131077, 0, 0, 196613, 0, 0, 262149, 0, 0, 327685, 0, 0, 393221, 0, 0, 458757, 0, 0, 524293, 0, 0, 65542, 0, 0, 131078, 0, 0, 196614, 0, 0, 262150, 0, 0, 327686, 0, 0, 393222, 0, 0, 458758, 0, 0, 524294, 0, 0, 65543, 0, 0, 131079, 0, 0, 196615, 0, 0, 262151, 0, 0, 327687, 0, 0, 393223, 0, 0, 458759, 0, 0, 524295, 0, 0, 65544, 0, 0, 131080, 0, 0, 196616, 0, 0, 262152, 0, 0, 327688, 0, 0, 393224, 0, 0, 458760, 0, 0, 524296, 0, 0, 65545, 0, 0, 131081, 0, 0, 196617, 0, 0, 262153, 0, 0, 327689, 0, 0, 393225, 0, 0, 458761, 0, 0, 524297, 0, 0, 65546, 0, 0, 131082, 0, 0, 196618, 0, 0, 262154, 0, 0, 327690, 0, 0, 393226, 0, 0, 458762, 0, 0, 524298, 0, 0, 65547, 0, 0, 131083, 0, 0, 196619, 0, 0, 262155, 0, 0, 327691, 0, 0, 393227, 0, 0, 458763, 0, 0, 524299, 0, 0, 65548, 0, 0, 131084, 0, 0, 196620, 0, 0, 262156, 0, 0, 327692, 0, 0, 393228, 0, 0, 458764, 0, 0, 524300, 0, 0, 65549, 0, 0, 131085, 0, 0, 196621, 0, 0, 262157, 0, 0, 327693, 0, 0, 393229, 0, 0, 458765, 0, 0, 524301, 0, 0, 65550, 0, 0, 131086, 0, 0, 196622, 0, 0, 262158, 0, 0, 327694, 0, 0, 393230, 0, 0, 458766, 0, 0, 524302, 0, 0, 65551, 0, 0, 131087, 0, 0, 196623, 0, 0, 262159, 0, 0, 327695, 0, 0, 393231, 0, 0, 458767, 0, 0, 524303, 0, 0, 65552, 0, 0, 131088, 0, 0, 196624, 0, 0, 262160, 0, 0, 327696, 0, 0, 393232, 0, 0, 458768, 0, 0, 524304, 0, 0)
+
+[node name="Background2" type="Panel" parent="Background"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 1122.0
+offset_bottom = 618.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_e1n8i")
+
+[node name="Background3" type="Panel" parent="Background"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -505.0
+offset_top = -253.0
+offset_right = 505.0
+offset_bottom = 253.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_dqrn6")
+
+[node name="Knight" type="AnimatedSprite2D" parent="Background"]
+position = Vector2(224, 476)
+sprite_frames = SubResource("SpriteFrames_2xnpb")
+autoplay = "default"
+
+[node name="Goblin" type="AnimatedSprite2D" parent="Background"]
+position = Vector2(928, 480)
+sprite_frames = SubResource("SpriteFrames_1ntp0")
+autoplay = "default"
+flip_h = true
+
+[node name="Castle" type="TextureRect" parent="Background"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 192.0
+offset_right = 384.0
+offset_bottom = 448.0
+texture = ExtResource("5_6hbwj")
+
+[node name="GoblinCabin" type="TextureRect" parent="Background"]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 224.0
+offset_right = 928.0
+offset_bottom = 448.0
+texture = ExtResource("6_0p5i2")
+
+[node name="GoblinCabin2" type="TextureRect" parent="Background"]
+layout_mode = 0
+offset_left = 928.0
+offset_top = 224.0
+offset_right = 1088.0
+offset_bottom = 448.0
+texture = ExtResource("6_0p5i2")
+
+[node name="Title" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -436.0
+offset_top = 45.0
+offset_right = 436.0
+offset_bottom = 182.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_penk1")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="Title"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -377.0
+offset_top = 19.0
+offset_right = 377.0
+offset_bottom = 95.0
+grow_horizontal = 2
+text = "Knightly Survival"
+label_settings = SubResource("LabelSettings_oyge5")
+
+[node name="Menu" type="Panel" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 413.0
+offset_top = 180.0
+offset_right = 739.0
+offset_bottom = 532.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_6wu6q")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 27.0
+offset_top = 18.0
+offset_right = -27.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Menu/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_ee8ix")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/VBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 15.0
+offset_right = -12.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="StartButton" type="TextureButton" parent="Menu/VBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("8_ggqh2")
+texture_pressed = ExtResource("9_t2oxv")
+texture_hover = ExtResource("10_wjkfl")
+stretch_mode = 0
+
+[node name="HSeparator" type="HSeparator" parent="Menu/VBoxContainer/Panel/VBoxContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="SettingsButton" type="TextureButton" parent="Menu/VBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("16_r5ixq")
+texture_pressed = ExtResource("17_ueuns")
+texture_hover = ExtResource("18_5deqv")
+stretch_mode = 0
+
+[node name="HSeparator3" type="HSeparator" parent="Menu/VBoxContainer/Panel/VBoxContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="CreditsButton" type="TextureButton" parent="Menu/VBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("11_grvc6")
+texture_pressed = ExtResource("12_nh2kt")
+texture_hover = ExtResource("12_fotjg")
+stretch_mode = 0
+
+[node name="HSeparator2" type="HSeparator" parent="Menu/VBoxContainer/Panel/VBoxContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="ExitButton" type="TextureButton" parent="Menu/VBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("13_q8dtp")
+texture_pressed = ExtResource("15_levvr")
+texture_hover = ExtResource("14_jjddn")
+stretch_mode = 0
+
+[node name="Credits" type="Panel" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 384.0
+offset_top = 169.5
+offset_right = 768.0
+offset_bottom = 566.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_xqkph")
+metadata/_edit_group_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Credits"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 29.0
+offset_top = 10.0
+offset_right = -29.0
+offset_bottom = -103.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_group_ = true
+
+[node name="Panel" type="Panel" parent="Credits/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_fhjil")
+
+[node name="Label" type="Label" parent="Credits/VBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -145.5
+offset_top = -10.0
+offset_right = 145.5
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Game Design / Programming"
+label_settings = SubResource("LabelSettings_wrfr1")
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 1
+
+[node name="Label" type="Label" parent="Credits/VBoxContainer"]
+layout_mode = 2
+text = "Douglas R. S. Silva"
+label_settings = SubResource("LabelSettings_1img6")
+horizontal_alignment = 1
+
+[node name="Panel2" type="Panel" parent="Credits/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_fhjil")
+
+[node name="Label" type="Label" parent="Credits/VBoxContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -145.5
+offset_top = -10.0
+offset_right = 145.5
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Mentorship"
+label_settings = SubResource("LabelSettings_wrfr1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Credits/VBoxContainer"]
+layout_mode = 2
+text = "Rafa Skoberg"
+label_settings = SubResource("LabelSettings_1img6")
+horizontal_alignment = 1
+
+[node name="Panel3" type="Panel" parent="Credits/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_fhjil")
+
+[node name="Label" type="Label" parent="Credits/VBoxContainer/Panel3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -145.5
+offset_top = -10.0
+offset_right = 145.5
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Art"
+label_settings = SubResource("LabelSettings_wrfr1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Credits/VBoxContainer"]
+layout_mode = 2
+text = "Pixel Frog
+CodeManu
+Meritite Union"
+label_settings = SubResource("LabelSettings_1img6")
+horizontal_alignment = 1
+
+[node name="Panel4" type="Panel" parent="Credits/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_fhjil")
+
+[node name="Label" type="Label" parent="Credits/VBoxContainer/Panel4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -145.5
+offset_top = -10.0
+offset_right = 145.5
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Sound"
+label_settings = SubResource("LabelSettings_wrfr1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="Credits/VBoxContainer"]
+layout_mode = 2
+text = "TomMusic
+Tallbeard Studios
+ObsidyanX"
+label_settings = SubResource("LabelSettings_1img6")
+horizontal_alignment = 1
+
+[node name="CloseCreditsButton" type="TextureButton" parent="Credits"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -18.0
+offset_top = -84.0
+offset_right = 18.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = SubResource("AtlasTexture_e3p8c")
+texture_pressed = SubResource("AtlasTexture_0og7x")
+texture_hover = SubResource("AtlasTexture_a62x7")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Settings" type="Panel" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 384.0
+offset_top = 169.5
+offset_right = 768.0
+offset_bottom = 566.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_xqkph")
+metadata/_edit_group_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Settings"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 46.0
+offset_top = 29.0
+offset_right = -46.0
+offset_bottom = -108.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 22
+
+[node name="Label2" type="Label" parent="Settings/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "SETTINGS
+"
+label_settings = SubResource("LabelSettings_7tw35")
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Settings/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="Settings/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Settings/VBoxContainer/HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -10.0
+offset_right = 128.0
+offset_bottom = 10.0
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "VOLUME"
+label_settings = SubResource("LabelSettings_wrfr1")
+vertical_alignment = 1
+text_overrun_behavior = 1
+
+[node name="VolumeSlider" type="HSlider" parent="Settings/VBoxContainer/HBoxContainer/Control"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -164.0
+offset_top = -28.0
+offset_bottom = 28.0
+grow_horizontal = 0
+grow_vertical = 2
+focus_mode = 0
+theme_override_icons/grabber = SubResource("CompressedTexture2D_gapy3")
+theme_override_icons/grabber_highlight = SubResource("CompressedTexture2D_d02b2")
+theme_override_icons/grabber_disabled = SubResource("CompressedTexture2D_wj30p")
+theme_override_styles/slider = SubResource("StyleBoxTexture_kbcdp")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_6bc8l")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_6bc8l")
+max_value = 1.0
+step = 0.1
+script = ExtResource("29_utt55")
+bus_name = "Master"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Settings/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="Settings/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Settings/VBoxContainer/HBoxContainer2/Control"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -10.0
+offset_right = 128.0
+offset_bottom = 10.0
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "SFX
+"
+label_settings = SubResource("LabelSettings_wrfr1")
+vertical_alignment = 1
+text_overrun_behavior = 1
+
+[node name="VolumeSlider2" type="HSlider" parent="Settings/VBoxContainer/HBoxContainer2/Control"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -164.0
+offset_top = -28.0
+offset_bottom = 28.0
+grow_horizontal = 0
+grow_vertical = 2
+focus_mode = 0
+theme_override_icons/grabber = SubResource("CompressedTexture2D_gapy3")
+theme_override_icons/grabber_highlight = SubResource("CompressedTexture2D_d02b2")
+theme_override_icons/grabber_disabled = SubResource("CompressedTexture2D_wj30p")
+theme_override_styles/slider = SubResource("StyleBoxTexture_kbcdp")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_6bc8l")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_6bc8l")
+max_value = 1.0
+step = 0.1
+script = ExtResource("29_utt55")
+bus_name = "SFX"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Settings/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="Settings/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Settings/VBoxContainer/HBoxContainer3/Control"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -10.0
+offset_right = 128.0
+offset_bottom = 10.0
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "MUSIC"
+label_settings = SubResource("LabelSettings_wrfr1")
+vertical_alignment = 1
+text_overrun_behavior = 1
+
+[node name="VolumeSlider3" type="HSlider" parent="Settings/VBoxContainer/HBoxContainer3/Control"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -164.0
+offset_top = -28.0
+offset_bottom = 28.0
+grow_horizontal = 0
+grow_vertical = 2
+focus_mode = 0
+theme_override_icons/grabber = SubResource("CompressedTexture2D_gapy3")
+theme_override_icons/grabber_highlight = SubResource("CompressedTexture2D_d02b2")
+theme_override_icons/grabber_disabled = SubResource("CompressedTexture2D_wj30p")
+theme_override_styles/slider = SubResource("StyleBoxTexture_kbcdp")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_6bc8l")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_6bc8l")
+max_value = 1.0
+step = 0.1
+script = ExtResource("29_utt55")
+bus_name = "Music"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Settings/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="Settings/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Settings/VBoxContainer/HBoxContainer4/Control"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -10.0
+offset_right = 128.0
+offset_bottom = 10.0
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "AMBIENT
+"
+label_settings = SubResource("LabelSettings_wrfr1")
+vertical_alignment = 1
+text_overrun_behavior = 1
+
+[node name="VolumeSlider4" type="HSlider" parent="Settings/VBoxContainer/HBoxContainer4/Control"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -164.0
+offset_top = -28.0
+offset_bottom = 28.0
+grow_horizontal = 0
+grow_vertical = 2
+focus_mode = 0
+theme_override_icons/grabber = SubResource("CompressedTexture2D_gapy3")
+theme_override_icons/grabber_highlight = SubResource("CompressedTexture2D_d02b2")
+theme_override_icons/grabber_disabled = SubResource("CompressedTexture2D_wj30p")
+theme_override_styles/slider = SubResource("StyleBoxTexture_kbcdp")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_6bc8l")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_6bc8l")
+max_value = 1.0
+step = 0.1
+script = ExtResource("29_utt55")
+bus_name = "Ambient"
+
+[node name="CloseSettingsButton" type="TextureButton" parent="Settings"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -18.0
+offset_top = -84.0
+offset_right = 18.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = SubResource("AtlasTexture_e3p8c")
+texture_pressed = SubResource("AtlasTexture_0og7x")
+texture_hover = SubResource("AtlasTexture_a62x7")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="ConfirmSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_c0ipd")
+bus = &"SFX"
+
+[node name="AmbientSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("27_i2obg")
+autoplay = true
+bus = &"Ambient"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("26_51cau")
+volume_db = -13.0
+autoplay = true
+bus = &"Music"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_3icaw")
+}
+autoplay = "Enter"
+
+[connection signal="button_up" from="Menu/VBoxContainer/Panel/VBoxContainer/StartButton" to="." method="_on_start_button_button_up"]
+[connection signal="button_up" from="Menu/VBoxContainer/Panel/VBoxContainer/SettingsButton" to="." method="_on_settings_button_button_up"]
+[connection signal="button_up" from="Menu/VBoxContainer/Panel/VBoxContainer/CreditsButton" to="." method="_on_credits_button_button_up"]
+[connection signal="button_up" from="Menu/VBoxContainer/Panel/VBoxContainer/ExitButton" to="." method="_on_exit_button_button_up"]
+[connection signal="button_up" from="Credits/CloseCreditsButton" to="." method="_on_close_credits_button_button_up"]
+[connection signal="button_up" from="Settings/CloseSettingsButton" to="." method="_on_close_settings_button_button_up"]

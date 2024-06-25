@@ -1,0 +1,360 @@
+[gd_scene load_steps=19 format=3 uid="uid://b74vn2h0e617"]
+
+[ext_resource type="Script" path="res://ui/game_over_ui.gd" id="1_b5uaw"]
+[ext_resource type="Texture2D" uid="uid://x833e84vkdqs" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Ribbons/Ribbon_Red_3Slides.png" id="2_c8x4t"]
+[ext_resource type="Texture2D" uid="uid://dqjvg5ixx8ath" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Banners/Banner_Vertical.png" id="3_prtw8"]
+[ext_resource type="FontFile" uid="uid://btrtsnhxf857a" path="res://font/Taroca Regular.ttf" id="3_w5n31"]
+[ext_resource type="Texture2D" uid="uid://cic6uamiduwkn" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Restart_Button_Blue_3Slides.png" id="4_ilf3o"]
+[ext_resource type="Texture2D" uid="uid://dkbxun5yuheq7" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Restart_Button_Blue_3Slides_Pressed.png" id="5_8kjyr"]
+[ext_resource type="Texture2D" uid="uid://cgc4s8l1to4oe" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Restart_Button_Hover_3Slides.png" id="6_bh86l"]
+[ext_resource type="Texture2D" uid="uid://dlax3pcy5ana2" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Exit_Button_Blue_3Slides.png" id="7_w5l5u"]
+[ext_resource type="Texture2D" uid="uid://bov3wfy2bvspl" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Exit_Button_Blue_3Slides_Pressed.png" id="8_oidjt"]
+[ext_resource type="Texture2D" uid="uid://hhn3ioggf5hv" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Buttons/Exit_Button_Hover_3Slides.png" id="9_p3q73"]
+[ext_resource type="AudioStream" uid="uid://brx51u8gh8dr1" path="res://addons/audio/Inteface SFX by ObsidyanX/confirm_style_2_001.ogg" id="10_84s54"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ox5ye"]
+texture = ExtResource("2_c8x4t")
+texture_margin_left = 64.0
+texture_margin_top = 16.0
+texture_margin_right = 64.0
+texture_margin_bottom = 24.0
+axis_stretch_horizontal = 2
+region_rect = Rect2(0, 0, 192, 64)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qq5fc"]
+font = ExtResource("3_w5n31")
+font_size = 50
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_157nu"]
+texture = ExtResource("3_prtw8")
+texture_margin_left = 24.0
+texture_margin_top = 48.0
+texture_margin_right = 24.0
+texture_margin_bottom = 36.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(36, 24, 120, 144)
+
+[sub_resource type="LabelSettings" id="LabelSettings_k430h"]
+font = ExtResource("3_w5n31")
+font_size = 20
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_ofi1k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/Ribbon:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(309.5, 71)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Background/Parchment:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Background/RestartButton:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(425, 513)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Background/ExitButton:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(473, 556)]
+}
+
+[sub_resource type="Animation" id="Animation_jys2t"]
+resource_name = "default"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.4, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 0.862745)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/Ribbon:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector2(309.5, -108), Vector2(309.5, 42)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Background/Parchment:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.3, 1),
+"transitions": PackedFloat32Array(5, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Background/RestartButton:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector2(-206, 478), Vector2(473, 478)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Background/ExitButton:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Vector2(1152, 556), Vector2(473, 556)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_468t1"]
+_data = {
+"RESET": SubResource("Animation_ofi1k"),
+"default": SubResource("Animation_jys2t")
+}
+
+[node name="GameOverUI" type="CanvasLayer"]
+script = ExtResource("1_b5uaw")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Ribbon" type="Panel" parent="Background"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 309.5
+offset_top = 71.0
+offset_right = 842.5
+offset_bottom = 163.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ox5ye")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="Background/Ribbon"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -163.5
+offset_top = -31.5
+offset_right = 163.5
+offset_bottom = 19.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "GAME OVER
+"
+label_settings = SubResource("LabelSettings_qq5fc")
+
+[node name="Parchment" type="Panel" parent="Background"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -147.5
+offset_top = -150.0
+offset_right = 147.5
+offset_bottom = 118.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_157nu")
+metadata/_edit_group_ = true
+
+[node name="GridContainer" type="GridContainer" parent="Background/Parchment"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -114.5
+offset_top = -98.0
+offset_right = 117.5
+offset_bottom = 98.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label3" type="Label" parent="Background/Parchment/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Time Survived:"
+label_settings = SubResource("LabelSettings_k430h")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TimeLabel" type="Label" parent="Background/Parchment/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "00:00"
+label_settings = SubResource("LabelSettings_k430h")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/Parchment/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Label1" type="Label" parent="Background/Parchment/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Meat Collected:
+"
+label_settings = SubResource("LabelSettings_k430h")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MeatLabel" type="Label" parent="Background/Parchment/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0"
+label_settings = SubResource("LabelSettings_k430h")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Background/Parchment/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Label2" type="Label" parent="Background/Parchment/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Enemies Slain:"
+label_settings = SubResource("LabelSettings_k430h")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EnemiesLabel" type="Label" parent="Background/Parchment/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0
+"
+label_settings = SubResource("LabelSettings_k430h")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RestartButton" type="TextureButton" parent="Background"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 425.0
+offset_top = 513.0
+offset_right = 631.0
+offset_bottom = 577.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("4_ilf3o")
+texture_pressed = ExtResource("5_8kjyr")
+texture_hover = ExtResource("6_bh86l")
+stretch_mode = 0
+
+[node name="ExitButton" type="TextureButton" parent="Background"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 473.0
+offset_top = 556.0
+offset_right = 678.999
+offset_bottom = 620.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("7_w5l5u")
+texture_pressed = ExtResource("8_oidjt")
+texture_hover = ExtResource("9_p3q73")
+stretch_mode = 0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_468t1")
+}
+autoplay = "default"
+
+[node name="ConfirmSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_84s54")
+
+[connection signal="button_up" from="Background/RestartButton" to="." method="_on_restart_button_button_up"]
+[connection signal="button_up" from="Background/ExitButton" to="." method="_on_exit_button_button_up"]

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://b35u5q5muqecw"]
+
+[ext_resource type="Texture2D" uid="uid://bpasybq8ostnf" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Goblins/Buildings/Wood_House/Goblin_House.png" id="1_ke7aa"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bg0o8"]
+radius = 30.0
+height = 84.0
+
+[node name="Goblin House" type="StaticBody2D"]
+scale = Vector2(1.5, 1.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -43)
+texture = ExtResource("1_ke7aa")
+region_enabled = true
+region_rect = Rect2(7, 26, 113, 146)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -11)
+rotation = -1.57079
+shape = SubResource("CapsuleShape2D_bg0o8")

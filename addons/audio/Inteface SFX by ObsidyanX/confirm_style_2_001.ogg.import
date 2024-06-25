@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://brx51u8gh8dr1"
+path="res://.godot/imported/confirm_style_2_001.ogg-93ba59b7054f7fed63beffeaa22fc739.oggvorbisstr"
+
+[deps]
+
+source_file="res://addons/audio/Inteface SFX by ObsidyanX/confirm_style_2_001.ogg"
+dest_files=["res://.godot/imported/confirm_style_2_001.ogg-93ba59b7054f7fed63beffeaa22fc739.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

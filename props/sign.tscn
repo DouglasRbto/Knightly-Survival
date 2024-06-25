@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8joxeorj7fu5"]
+
+[ext_resource type="Texture2D" uid="uid://1v741q0lj6fg" path="res://addons/img/Tiny Swords by Pixel Frog/Deco/17.png" id="1_qwgv2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xj7hd"]
+radius = 17.0294
+
+[node name="Sign" type="StaticBody2D"]
+
+[node name="AnimatedSprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -45)
+texture = ExtResource("1_qwgv2")
+region_enabled = true
+region_rect = Rect2(2, 15, 59, 90)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, -17)
+shape = SubResource("CircleShape2D_xj7hd")

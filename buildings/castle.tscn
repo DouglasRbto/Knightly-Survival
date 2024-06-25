@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnvkkti53nl0h"]
+
+[ext_resource type="Texture2D" uid="uid://biptukfyd1nom" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Knights/Buildings/Castle/Castle_Blue.png" id="1_ugakp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8n335"]
+radius = 57.5
+height = 269.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ga2qk"]
+size = Vector2(252, 80)
+
+[node name="Castle" type="StaticBody2D"]
+scale = Vector2(2, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -65.5)
+texture = ExtResource("1_ugakp")
+region_enabled = true
+region_rect = Rect2(16, 40, 288, 208)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -32)
+rotation = -1.57079
+shape = SubResource("CapsuleShape2D_8n335")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, -88)
+shape = SubResource("RectangleShape2D_ga2qk")

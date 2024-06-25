@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://djhrv6qqeggbs"
+path="res://.godot/imported/Sword Impact Hit 2.ogg-d01cf0d2b959219e76746dae3d68681f.oggvorbisstr"
+
+[deps]
+
+source_file="res://addons/audio/Free Fantasy SFX Pack By TomMusic/Sword Impact Hit 2.ogg"
+dest_files=["res://.godot/imported/Sword Impact Hit 2.ogg-d01cf0d2b959219e76746dae3d68681f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

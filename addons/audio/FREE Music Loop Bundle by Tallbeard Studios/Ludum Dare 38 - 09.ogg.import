@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dkrmnc48ptqes"
+path="res://.godot/imported/Ludum Dare 38 - 09.ogg-f2f25dfb78c62e4cc2e709e03b2333f6.oggvorbisstr"
+
+[deps]
+
+source_file="res://addons/audio/FREE Music Loop Bundle by Tallbeard Studios/Ludum Dare 38 - 09.ogg"
+dest_files=["res://.godot/imported/Ludum Dare 38 - 09.ogg-f2f25dfb78c62e4cc2e709e03b2333f6.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

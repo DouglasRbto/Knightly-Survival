@@ -1,0 +1,883 @@
+[gd_scene load_steps=121 format=3 uid="uid://g07i3cjylbsn"]
+
+[ext_resource type="Texture2D" uid="uid://dqjvg5ixx8ath" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Banners/Banner_Vertical.png" id="1_1vlaj"]
+[ext_resource type="Texture2D" uid="uid://3llsth2b5vh8" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Ribbons/Ribbon_Blue_3Slides.png" id="1_oaqk3"]
+[ext_resource type="Script" path="res://ui/tutorial.gd" id="1_tcp8m"]
+[ext_resource type="FontFile" uid="uid://btrtsnhxf857a" path="res://font/Taroca Regular.ttf" id="3_bn5px"]
+[ext_resource type="Texture2D" uid="uid://c2wag7sm4gjl5" path="res://addons/img/input-prompts-1.1.1 by Meritite Union/256_png/pc/light/layout/wasd/_.png" id="3_fi36q"]
+[ext_resource type="Texture2D" uid="uid://du33tkxp7xsnq" path="res://addons/img/Tiny Swords by Pixel Frog/UI/Banners/Carved_9Slides.png" id="3_sc0cp"]
+[ext_resource type="Texture2D" uid="uid://c8lnyd332fot5" path="res://addons/img/input-prompts-1.1.1 by Meritite Union/256_png/pc/light/mouse/lblabel.png" id="4_8q4oq"]
+[ext_resource type="Texture2D" uid="uid://cavxkbn0rfvcq" path="res://addons/img/input-prompts-1.1.1 by Meritite Union/256_png/pc/light/key/special/_/space.png" id="5_gy6hd"]
+[ext_resource type="Texture2D" uid="uid://xfe4glah17s0" path="res://addons/img/input-prompts-1.1.1 by Meritite Union/256_png/pc/light/key/legacy/_/escape.png" id="6_k3ean"]
+[ext_resource type="Texture2D" uid="uid://b6kdks1droni8" path="res://addons/img/Tiny Swords by Pixel Frog/Resources/Sheep/HappySheep_Idle.png" id="8_2sfrt"]
+[ext_resource type="Texture2D" uid="uid://dh3rma50gee2i" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Knights/Troops/Pawn/Red/Pawn_Red.png" id="9_va8vo"]
+[ext_resource type="Texture2D" uid="uid://qsatx80kalkk" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Goblins/Troops/Torch/Red/Torch_Red.png" id="10_yo7nk"]
+[ext_resource type="Texture2D" uid="uid://b1ffn8k8jovot" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Knights/Troops/Warrior/Blue/Slices/00_Warrior_Blue.png" id="13_5spva"]
+[ext_resource type="Texture2D" uid="uid://oql22gmjx4l6" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Knights/Troops/Warrior/Blue/Slices/01_Warrior_Blue.png" id="14_o7agk"]
+[ext_resource type="Texture2D" uid="uid://bimk5pmcpuskc" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Knights/Troops/Warrior/Blue/Slices/02_Warrior_Blue.png" id="15_dax5c"]
+[ext_resource type="Texture2D" uid="uid://c7j48lci7ag03" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Knights/Troops/Warrior/Blue/Slices/03_Warrior_Blue.png" id="16_svium"]
+[ext_resource type="Texture2D" uid="uid://byej11ua1p2yx" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Knights/Troops/Warrior/Blue/Slices/04_Warrior_Blue.png" id="17_8kyax"]
+[ext_resource type="Texture2D" uid="uid://m6gcphj5jq5b" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Knights/Troops/Warrior/Blue/Slices/05_Warrior_Blue.png" id="18_ul5pd"]
+[ext_resource type="Texture2D" uid="uid://v5uah1xr2jbr" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_000.png" id="19_qc4pv"]
+[ext_resource type="Texture2D" uid="uid://dxg540q2fya7" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_001.png" id="20_pfxox"]
+[ext_resource type="Texture2D" uid="uid://c4gdqbjoll14v" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_010.png" id="21_5vtt6"]
+[ext_resource type="Texture2D" uid="uid://g6sjqd2yhswn" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_011.png" id="22_7h2hu"]
+[ext_resource type="Texture2D" uid="uid://by2pswdn1mfu" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_012.png" id="23_xeu3c"]
+[ext_resource type="Texture2D" uid="uid://48kt6oamvlfm" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_013.png" id="24_hp8lc"]
+[ext_resource type="Texture2D" uid="uid://b2eto3vtppf4b" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_014.png" id="25_7yopw"]
+[ext_resource type="Texture2D" uid="uid://c5xobx8psdexs" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_002.png" id="26_3sxy1"]
+[ext_resource type="Texture2D" uid="uid://epxjlkub6dqx" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_015.png" id="26_b7ql2"]
+[ext_resource type="Texture2D" uid="uid://7fxy5ls13bdd" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_016.png" id="27_j78fo"]
+[ext_resource type="Texture2D" uid="uid://c4is6t4gxpmoo" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_003.png" id="27_yv2mh"]
+[ext_resource type="Texture2D" uid="uid://c7c0kmqjvw5nn" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_004.png" id="28_8xify"]
+[ext_resource type="Texture2D" uid="uid://tib2e33c5dw4" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_017.png" id="28_wcjuf"]
+[ext_resource type="Texture2D" uid="uid://deyy61se0p2x6" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_005.png" id="29_s2e72"]
+[ext_resource type="Texture2D" uid="uid://eo0lfrcdt6jx" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_018.png" id="29_x25ld"]
+[ext_resource type="Texture2D" uid="uid://dayjdfhf42yrj" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_006.png" id="30_auwdb"]
+[ext_resource type="Texture2D" uid="uid://diymdpb2dwfvc" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_019.png" id="30_oq6yx"]
+[ext_resource type="Texture2D" uid="uid://x6hknbwgdmqc" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_007.png" id="31_yns0m"]
+[ext_resource type="Texture2D" uid="uid://b6tey8xxs0v6b" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_020.png" id="32_01af4"]
+[ext_resource type="Texture2D" uid="uid://bg37wr4s0pw2m" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_008.png" id="32_taokf"]
+[ext_resource type="Texture2D" uid="uid://c1qalatr1pxjt" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_009.png" id="33_fxbjj"]
+[ext_resource type="Texture2D" uid="uid://4eoxngxvfhep" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_021.png" id="33_m6yub"]
+[ext_resource type="Texture2D" uid="uid://mrs63y2u8oyp" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_022.png" id="34_3rr6c"]
+[ext_resource type="Texture2D" uid="uid://cs40438dektcb" path="res://addons/img/VFX Free Pack by CodeManu/ChargedSlices/Effect_Charged_1_023.png" id="35_bg231"]
+[ext_resource type="Texture2D" uid="uid://eelpubwes4x1" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_000.png" id="43_823kb"]
+[ext_resource type="Texture2D" uid="uid://bu2dtp445krsn" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_001.png" id="44_xt5oc"]
+[ext_resource type="Texture2D" uid="uid://c1fv0s0oodbvo" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_010.png" id="45_addy1"]
+[ext_resource type="Texture2D" uid="uid://dyyt86pf5h126" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_002.png" id="45_p52te"]
+[ext_resource type="Texture2D" uid="uid://wdl6acspv5ua" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_003.png" id="46_owu5t"]
+[ext_resource type="Texture2D" uid="uid://cvdbnurbhvp5n" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_011.png" id="46_weq5w"]
+[ext_resource type="Texture2D" uid="uid://dec0752hldc0e" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_012.png" id="47_kkgms"]
+[ext_resource type="Texture2D" uid="uid://fy7gcuksm82w" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_004.png" id="47_qr6wo"]
+[ext_resource type="Texture2D" uid="uid://d0cth4hi13mys" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_013.png" id="48_dh8bb"]
+[ext_resource type="Texture2D" uid="uid://ccc3u0dfppfdt" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_005.png" id="48_sxpxv"]
+[ext_resource type="Texture2D" uid="uid://bv6l10rqcqg18" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_006.png" id="49_4pn2w"]
+[ext_resource type="Texture2D" uid="uid://bskcsdwi5c2nq" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_014.png" id="49_43f2c"]
+[ext_resource type="Texture2D" uid="uid://bas6vljgoc1vw" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_015.png" id="50_1kqoy"]
+[ext_resource type="Texture2D" uid="uid://c2nhertpkco8s" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_007.png" id="50_si7ji"]
+[ext_resource type="Texture2D" uid="uid://c2c0vh3hsj8jp" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_016.png" id="51_3noeg"]
+[ext_resource type="Texture2D" uid="uid://42tjag7x3n8f" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_008.png" id="51_y6kpj"]
+[ext_resource type="Texture2D" uid="uid://bxnsk02aj40o0" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_009.png" id="52_dlaba"]
+[ext_resource type="Texture2D" uid="uid://dr74yjqinu83x" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_017.png" id="52_i82oa"]
+[ext_resource type="Texture2D" uid="uid://bmqiftmcjjff6" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_018.png" id="53_35m50"]
+[ext_resource type="Texture2D" uid="uid://dwrkcree1oow8" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_019.png" id="54_ol8dh"]
+[ext_resource type="Texture2D" uid="uid://bspp311ncpe1x" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_020.png" id="56_shjeb"]
+[ext_resource type="Texture2D" uid="uid://d2ehii80cqtar" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_021.png" id="57_6gec6"]
+[ext_resource type="Texture2D" uid="uid://clt4uoym3uqcn" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_022.png" id="58_4jjih"]
+[ext_resource type="Texture2D" uid="uid://cwd7wdwgj0ol7" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_023.png" id="59_jdpjn"]
+[ext_resource type="Texture2D" uid="uid://b4vmg6l06lkwv" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_024.png" id="60_1noqo"]
+[ext_resource type="Texture2D" uid="uid://dgg21ytir6imw" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_025.png" id="61_martn"]
+[ext_resource type="Texture2D" uid="uid://c5r0hm1is4tpj" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_026.png" id="62_5dsx6"]
+[ext_resource type="Texture2D" uid="uid://cemhgacc8at1p" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_027.png" id="63_lbksn"]
+[ext_resource type="Texture2D" uid="uid://dsdwhtcdu8vef" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_028.png" id="64_vxnlr"]
+[ext_resource type="Texture2D" uid="uid://g2h1mhafh01d" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_029.png" id="65_bs3jc"]
+[ext_resource type="Texture2D" uid="uid://x70cd7tb3oss" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_030.png" id="67_qvwsh"]
+[ext_resource type="Texture2D" uid="uid://cryro1ricu7x6" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_031.png" id="68_0ihjw"]
+[ext_resource type="Texture2D" uid="uid://b66r2jbfbonbp" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_032.png" id="69_y6vxp"]
+[ext_resource type="Texture2D" uid="uid://c84ymv0kvkifl" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_033.png" id="70_ykec0"]
+[ext_resource type="Texture2D" uid="uid://c30yfx3mv7ihf" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_034.png" id="71_sy28v"]
+[ext_resource type="Texture2D" uid="uid://bg5gf3gsnj0ir" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_035.png" id="72_ol6av"]
+[ext_resource type="Texture2D" uid="uid://cpn0l8gg4el80" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_036.png" id="73_p4m2a"]
+[ext_resource type="Texture2D" uid="uid://e2dc3bl7b3q6" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_037.png" id="74_v5ylu"]
+[ext_resource type="Texture2D" uid="uid://b2h541x1gcdwg" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_038.png" id="75_p4dfi"]
+[ext_resource type="Texture2D" uid="uid://3pdp6neqv1cj" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_039.png" id="76_m1scu"]
+[ext_resource type="Texture2D" uid="uid://bvp2yw3tu1cth" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_040.png" id="78_we2gj"]
+[ext_resource type="Texture2D" uid="uid://b17xemfadhggd" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_041.png" id="79_ay6ye"]
+[ext_resource type="Texture2D" uid="uid://cb27e83ukogvn" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_042.png" id="80_i78co"]
+[ext_resource type="Texture2D" uid="uid://c8v2r53wybn53" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_043.png" id="81_x8cwf"]
+[ext_resource type="Texture2D" uid="uid://c5xog4twc8odf" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_044.png" id="82_sqbsa"]
+[ext_resource type="Texture2D" uid="uid://dt4fg7iwg4xnb" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_045.png" id="83_t8117"]
+[ext_resource type="Texture2D" uid="uid://bb1u41tgy8off" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_046.png" id="84_xpugf"]
+[ext_resource type="Texture2D" uid="uid://go0ly4buulug" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_047.png" id="85_57kxj"]
+[ext_resource type="Texture2D" uid="uid://dbkoqsabbirhl" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_048.png" id="86_nsdc7"]
+[ext_resource type="Texture2D" uid="uid://dsndjnw5dms86" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_049.png" id="87_15fcn"]
+[ext_resource type="Texture2D" uid="uid://dnm605dq8biop" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_050.png" id="89_ktxb0"]
+[ext_resource type="Texture2D" uid="uid://du5rug8bubnmg" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_051.png" id="90_lympi"]
+[ext_resource type="Texture2D" uid="uid://cp7s03kd06k7e" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_052.png" id="91_4hkc3"]
+[ext_resource type="Texture2D" uid="uid://b6t6xe6vjjiqq" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_053.png" id="92_sbu24"]
+[ext_resource type="Texture2D" uid="uid://dm5lgpmxmf2vb" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_054.png" id="93_fqg0h"]
+[ext_resource type="Texture2D" uid="uid://dmfde45grkgi1" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_055.png" id="94_8jlkg"]
+[ext_resource type="Texture2D" uid="uid://frmw3f22mddj" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_056.png" id="95_q1mx7"]
+[ext_resource type="Texture2D" uid="uid://dylhcmddljlo1" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_057.png" id="96_0kbct"]
+[ext_resource type="Texture2D" uid="uid://cictr4ad70xe0" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_058.png" id="97_cn43b"]
+[ext_resource type="Texture2D" uid="uid://bi5afahxe4c3a" path="res://addons/img/VFX Free Pack by CodeManu/SpellSlices/Effect_EldenRing_1_059.png" id="98_orrv5"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sjlp8"]
+texture = ExtResource("1_oaqk3")
+texture_margin_left = 64.0
+texture_margin_top = 16.0
+texture_margin_right = 64.0
+texture_margin_bottom = 24.0
+axis_stretch_horizontal = 2
+region_rect = Rect2(0, 0, 192, 64)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ssgnq"]
+font = ExtResource("3_bn5px")
+font_size = 50
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vg27a"]
+texture = ExtResource("1_1vlaj")
+texture_margin_left = 24.0
+texture_margin_top = 48.0
+texture_margin_right = 24.0
+texture_margin_bottom = 36.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(36, 24, 120, 144)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kgj5n"]
+font = ExtResource("3_bn5px")
+font_size = 35
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hd7ib"]
+texture = ExtResource("3_sc0cp")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_soeqj"]
+font = ExtResource("3_bn5px")
+font_size = 20
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t81od"]
+atlas = ExtResource("8_2sfrt")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="LabelSettings" id="LabelSettings_i2hwb"]
+line_spacing = 0.0
+font = ExtResource("3_bn5px")
+font_size = 17
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_fkyjc"]
+line_spacing = -1.0
+font = ExtResource("3_bn5px")
+font_size = 15
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yktm5"]
+atlas = ExtResource("9_va8vo")
+region = Rect2(0, 768, 192, 192)
+
+[sub_resource type="LabelSettings" id="LabelSettings_njalf"]
+line_spacing = 0.0
+font = ExtResource("3_bn5px")
+font_size = 17
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n1gxj"]
+atlas = ExtResource("10_yo7nk")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="LabelSettings" id="LabelSettings_dj6te"]
+line_spacing = 0.0
+font = ExtResource("3_bn5px")
+font_size = 17
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8e3q2"]
+font = ExtResource("3_bn5px")
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_glvd6"]
+frames = 6
+speed_scale = 10.0
+frame_0/texture = ExtResource("13_5spva")
+frame_1/texture = ExtResource("14_o7agk")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("15_dax5c")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("16_svium")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("17_8kyax")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("18_ul5pd")
+frame_5/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_2cja6"]
+frames = 24
+speed_scale = 60.0
+frame_0/texture = ExtResource("19_qc4pv")
+frame_1/texture = ExtResource("20_pfxox")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("26_3sxy1")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("27_yv2mh")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("28_8xify")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("29_s2e72")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("30_auwdb")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("31_yns0m")
+frame_7/duration = 1.0
+frame_8/texture = ExtResource("32_taokf")
+frame_8/duration = 1.0
+frame_9/texture = ExtResource("33_fxbjj")
+frame_9/duration = 1.0
+frame_10/texture = ExtResource("21_5vtt6")
+frame_10/duration = 1.0
+frame_11/texture = ExtResource("22_7h2hu")
+frame_11/duration = 1.0
+frame_12/texture = ExtResource("23_xeu3c")
+frame_12/duration = 1.0
+frame_13/texture = ExtResource("24_hp8lc")
+frame_13/duration = 1.0
+frame_14/texture = ExtResource("25_7yopw")
+frame_14/duration = 1.0
+frame_15/texture = ExtResource("26_b7ql2")
+frame_15/duration = 1.0
+frame_16/texture = ExtResource("27_j78fo")
+frame_16/duration = 1.0
+frame_17/texture = ExtResource("28_wcjuf")
+frame_17/duration = 1.0
+frame_18/texture = ExtResource("29_x25ld")
+frame_18/duration = 1.0
+frame_19/texture = ExtResource("30_oq6yx")
+frame_19/duration = 1.0
+frame_20/texture = ExtResource("32_01af4")
+frame_20/duration = 1.0
+frame_21/texture = ExtResource("33_m6yub")
+frame_21/duration = 1.0
+frame_22/texture = ExtResource("34_3rr6c")
+frame_22/duration = 1.0
+frame_23/texture = ExtResource("35_bg231")
+frame_23/duration = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_6i217"]
+font = ExtResource("3_bn5px")
+font_color = Color(0, 0, 0, 1)
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_gb5ii"]
+frames = 60
+speed_scale = 60.0
+frame_0/texture = ExtResource("43_823kb")
+frame_1/texture = ExtResource("44_xt5oc")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("45_p52te")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("46_owu5t")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("47_qr6wo")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("48_sxpxv")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("49_4pn2w")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("50_si7ji")
+frame_7/duration = 1.0
+frame_8/texture = ExtResource("51_y6kpj")
+frame_8/duration = 1.0
+frame_9/texture = ExtResource("52_dlaba")
+frame_9/duration = 1.0
+frame_10/texture = ExtResource("45_addy1")
+frame_10/duration = 1.0
+frame_11/texture = ExtResource("46_weq5w")
+frame_11/duration = 1.0
+frame_12/texture = ExtResource("47_kkgms")
+frame_12/duration = 1.0
+frame_13/texture = ExtResource("48_dh8bb")
+frame_13/duration = 1.0
+frame_14/texture = ExtResource("49_43f2c")
+frame_14/duration = 1.0
+frame_15/texture = ExtResource("50_1kqoy")
+frame_15/duration = 1.0
+frame_16/texture = ExtResource("51_3noeg")
+frame_16/duration = 1.0
+frame_17/texture = ExtResource("52_i82oa")
+frame_17/duration = 1.0
+frame_18/texture = ExtResource("53_35m50")
+frame_18/duration = 1.0
+frame_19/texture = ExtResource("54_ol8dh")
+frame_19/duration = 1.0
+frame_20/texture = ExtResource("56_shjeb")
+frame_20/duration = 1.0
+frame_21/texture = ExtResource("57_6gec6")
+frame_21/duration = 1.0
+frame_22/texture = ExtResource("58_4jjih")
+frame_22/duration = 1.0
+frame_23/texture = ExtResource("59_jdpjn")
+frame_23/duration = 1.0
+frame_24/texture = ExtResource("60_1noqo")
+frame_24/duration = 1.0
+frame_25/texture = ExtResource("61_martn")
+frame_25/duration = 1.0
+frame_26/texture = ExtResource("62_5dsx6")
+frame_26/duration = 1.0
+frame_27/texture = ExtResource("63_lbksn")
+frame_27/duration = 1.0
+frame_28/texture = ExtResource("64_vxnlr")
+frame_28/duration = 1.0
+frame_29/texture = ExtResource("65_bs3jc")
+frame_29/duration = 1.0
+frame_30/texture = ExtResource("67_qvwsh")
+frame_30/duration = 1.0
+frame_31/texture = ExtResource("68_0ihjw")
+frame_31/duration = 1.0
+frame_32/texture = ExtResource("69_y6vxp")
+frame_32/duration = 1.0
+frame_33/texture = ExtResource("70_ykec0")
+frame_33/duration = 1.0
+frame_34/texture = ExtResource("71_sy28v")
+frame_34/duration = 1.0
+frame_35/texture = ExtResource("72_ol6av")
+frame_35/duration = 1.0
+frame_36/texture = ExtResource("73_p4m2a")
+frame_36/duration = 1.0
+frame_37/texture = ExtResource("74_v5ylu")
+frame_37/duration = 1.0
+frame_38/texture = ExtResource("75_p4dfi")
+frame_38/duration = 1.0
+frame_39/texture = ExtResource("76_m1scu")
+frame_39/duration = 1.0
+frame_40/texture = ExtResource("78_we2gj")
+frame_40/duration = 1.0
+frame_41/texture = ExtResource("79_ay6ye")
+frame_41/duration = 1.0
+frame_42/texture = ExtResource("80_i78co")
+frame_42/duration = 1.0
+frame_43/texture = ExtResource("81_x8cwf")
+frame_43/duration = 1.0
+frame_44/texture = ExtResource("82_sqbsa")
+frame_44/duration = 1.0
+frame_45/texture = ExtResource("83_t8117")
+frame_45/duration = 1.0
+frame_46/texture = ExtResource("84_xpugf")
+frame_46/duration = 1.0
+frame_47/texture = ExtResource("85_57kxj")
+frame_47/duration = 1.0
+frame_48/texture = ExtResource("86_nsdc7")
+frame_48/duration = 1.0
+frame_49/texture = ExtResource("87_15fcn")
+frame_49/duration = 1.0
+frame_50/texture = ExtResource("89_ktxb0")
+frame_50/duration = 1.0
+frame_51/texture = ExtResource("90_lympi")
+frame_51/duration = 1.0
+frame_52/texture = ExtResource("91_4hkc3")
+frame_52/duration = 1.0
+frame_53/texture = ExtResource("92_sbu24")
+frame_53/duration = 1.0
+frame_54/texture = ExtResource("93_fqg0h")
+frame_54/duration = 1.0
+frame_55/texture = ExtResource("94_8jlkg")
+frame_55/duration = 1.0
+frame_56/texture = ExtResource("95_q1mx7")
+frame_56/duration = 1.0
+frame_57/texture = ExtResource("96_0kbct")
+frame_57/duration = 1.0
+frame_58/texture = ExtResource("97_cn43b")
+frame_58/duration = 1.0
+frame_59/texture = ExtResource("98_orrv5")
+frame_59/duration = 1.0
+
+[node name="Panel" type="ColorRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.901961)
+script = ExtResource("1_tcp8m")
+
+[node name="Ribbon" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -266.5
+offset_top = 24.0
+offset_right = 266.5
+offset_bottom = 116.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_sjlp8")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="Ribbon"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -207.5
+offset_top = -31.0
+offset_right = 208.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "HOW TO PLAY"
+label_settings = SubResource("LabelSettings_ssgnq")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -196.0
+offset_right = 232.0
+offset_bottom = 292.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_vg27a")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = 32.0
+offset_right = -32.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label4" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "OBJECTIVES"
+label_settings = SubResource("LabelSettings_kgj5n")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.6
+theme_override_styles/panel = SubResource("StyleBoxTexture_hd7ib")
+
+[node name="Label3" type="Label" parent="Panel/VBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 13.0
+offset_top = 16.0
+offset_right = -12.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "1 - Explore
+2 - Kill enemies to earn XP
+3 - Collect meat to recover HP
+4 - Survive!"
+label_settings = SubResource("LabelSettings_soeqj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "ENEMIES"
+label_settings = SubResource("LabelSettings_kgj5n")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Panel2" type="Panel" parent="Panel/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_hd7ib")
+
+[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer/VBoxContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_t81od")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Label3" type="Label" parent="Panel/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Stray Sheep"
+label_settings = SubResource("LabelSettings_i2hwb")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="Panel/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Damage: low
+Speed: high"
+label_settings = SubResource("LabelSettings_fkyjc")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Panel3" type="Panel" parent="Panel/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_hd7ib")
+
+[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer/VBoxContainer2/Panel3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_yktm5")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Label4" type="Label" parent="Panel/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Mad Villager"
+label_settings = SubResource("LabelSettings_njalf")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="Panel/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Damage: medium
+Speed: medium"
+label_settings = SubResource("LabelSettings_fkyjc")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Panel4" type="Panel" parent="Panel/VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_hd7ib")
+
+[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/HBoxContainer/VBoxContainer3/Panel4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_n1gxj")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Label5" type="Label" parent="Panel/VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "Goblin"
+label_settings = SubResource("LabelSettings_dj6te")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="Panel/VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "Damage: high
+Speed: low"
+label_settings = SubResource("LabelSettings_fkyjc")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -536.0
+offset_top = -196.0
+offset_right = -240.0
+offset_bottom = 292.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_vg27a")
+
+[node name="Container" type="Control" parent="Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_group_ = true
+
+[node name="Label4" type="Label" parent="Panel2/Container"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 36.0
+grow_horizontal = 2
+text = "CONTROLS"
+label_settings = SubResource("LabelSettings_kgj5n")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel2/Container"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 40.0
+offset_right = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_group_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel2/Container/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+metadata/_edit_group_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel2/Container/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Panel2/Container/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_fi36q")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TextureRect2" type="TextureRect" parent="Panel2/Container/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_8q4oq")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TextureRect3" type="TextureRect" parent="Panel2/Container/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_gy6hd")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TextureRect4" type="TextureRect" parent="Panel2/Container/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_k3ean")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Panel2/Container/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label4" type="Label" parent="Panel2/Container/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "move
+"
+label_settings = SubResource("LabelSettings_8e3q2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="Panel2/Container/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "attack"
+label_settings = SubResource("LabelSettings_8e3q2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="Panel2/Container/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "spell"
+label_settings = SubResource("LabelSettings_8e3q2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label7" type="Label" parent="Panel2/Container/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "pause"
+label_settings = SubResource("LabelSettings_8e3q2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel3" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 240.0
+offset_top = -196.0
+offset_right = 536.0
+offset_bottom = 292.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_vg27a")
+
+[node name="Container" type="Control" parent="Panel3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label4" type="Label" parent="Panel3/Container"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 36.0
+grow_horizontal = 2
+text = "SPELL"
+label_settings = SubResource("LabelSettings_kgj5n")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel3/Container"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 40.0
+offset_right = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Panel3/Container/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.6
+theme_override_styles/panel = SubResource("StyleBoxTexture_hd7ib")
+
+[node name="TextureRect" type="TextureRect" parent="Panel3/Container/VBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.0
+offset_top = -75.5
+offset_right = 72.0
+offset_bottom = 75.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AnimatedTexture_glvd6")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_group_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="Panel3/Container/VBoxContainer/Panel/TextureRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -60.0
+offset_top = 33.0
+offset_right = 62.0
+offset_bottom = 134.0
+grow_horizontal = 2
+texture = SubResource("AnimatedTexture_2cja6")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Label3" type="Label" parent="Panel3/Container/VBoxContainer"]
+layout_mode = 2
+text = "when the hero gather enough magic he can unleash his inner power to cast a powerful spell"
+label_settings = SubResource("LabelSettings_6i217")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Panel2" type="Panel" parent="Panel3/Container/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.6
+theme_override_styles/panel = SubResource("StyleBoxTexture_hd7ib")
+
+[node name="TextureRect" type="TextureRect" parent="Panel3/Container/VBoxContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.0
+offset_top = -75.5
+offset_right = 72.0
+offset_bottom = 75.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AnimatedTexture_glvd6")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TextureRect2" type="TextureRect" parent="Panel3/Container/VBoxContainer/Panel2/TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.0
+offset_top = -74.5
+offset_right = 72.0
+offset_bottom = 75.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AnimatedTexture_gb5ii")
+expand_mode = 1
+stretch_mode = 4
