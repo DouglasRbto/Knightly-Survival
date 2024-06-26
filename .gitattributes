@@ -1,3 +1,2 @@
-# Normalize EOL for all files that Git considers text files.
-* text=auto eol=lf
-* exports/web/* linguist-vendored
+*.gd linguist-language=GDScript
+exports/web/* linguist-vendored
