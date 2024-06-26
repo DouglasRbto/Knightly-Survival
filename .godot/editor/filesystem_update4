@@ -1,1 +1,11 @@
 res://misc/skull.tscn
+res://main.tscn
+res://ui/main_menu.tscn
+res://spell/ritual.tscn
+res://enemies/goblin.tscn
+res://enemies/pawn.tscn
+res://enemies/sheep.tscn
+res://enemies/super_goblin.tscn
+res://ui/pause_menu.tscn
+res://player/player.tscn
+res://misc/big_skull.tscn
