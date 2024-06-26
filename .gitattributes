@@ -1,2 +1,1 @@
 *.gd linguist-language=GDScript
-exports/web/* linguist-vendored
