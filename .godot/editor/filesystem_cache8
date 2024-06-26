@@ -1,9 +1,8 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1719338153
+::res://::1719366177
 default_bus_layout.tres::AudioBusLayout::3439615355932015319::1719330899::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1719331057::0::1::::<><>::
 icon.png::CompressedTexture2D::5404783139208478465::1719174186::1719243683::1::::<><>::
-icon.svg::CompressedTexture2D::7177581250785642812::1716732694::1719243683::1::::<><>::
 main.gd::GDScript::-1::1719283080::0::1::::<>Node2D<>::
 main.tscn::PackedScene::3584577030746869389::1719330959::0::1::::<><>::uid://dj4cmbjii4t5q::::res://addons/img/Tiny Swords by Pixel Frog/Terrain/Ground/Tilemap_Flat.png<>res://main.gd<>uid://go8v6ratnoix::::res://addons/img/Tiny Swords by Pixel Frog/Deco/Deco Sheet.png<>uid://or5s3naidcnb::::res://addons/img/Tiny Swords by Pixel Frog/Terrain/Water/Foam/Foam.png<>uid://c74c30v5aiyww::::res://player/player.tscn<>uid://cso7g3t4qoguy::::res://props/tree.tscn<>uid://3oqnog4tajl6::::res://buildings/house.tscn<>uid://cged5t2ypcewe::::res://systems/mob_spawner.tscn<>uid://b35u5q5muqecw::::res://buildings/goblin_house.tscn<>res://systems/difficulty_system.gd<>uid://dwo1a0gci6pg0::::res://ui/game_ui.tscn<>uid://c68ndncwqxwms::::res://props/cut_tree.tscn<>uid://cg8ntafwypa34::::res://addons/audio/Free Fantasy SFX Pack By TomMusic/Forest Day.ogg<>uid://b1kpie7bv4owx::::res://addons/img/Tiny Swords by Pixel Frog/Terrain/Water/Water.png<>uid://dnvkkti53nl0h::::res://buildings/castle.tscn<>uid://dil0f0ucxqevw::::res://enemies/sheep.tscn<>uid://brjrn6h7g33qr::::res://enemies/super_goblin.tscn<>uid://bd3aqjrrju1id::::res://enemies/pawn.tscn<>uid://d157aot33btuf::::res://addons/audio/FREE Music Loop Bundle by Tallbeard Studios/Ludum Dare 30 - 04.ogg<>uid://dlmeke0mux4in::::res://enemies/goblin.tscn<>uid://dje8laapw1l3e::::res://misc/super_meat.tscn<>uid://c4kfbyet1euv1::::res://props/skull_sign.tscn<>uid://c8joxeorj7fu5::::res://props/sign.tscn
 ::res://addons/::1719083556
@@ -1509,12 +1508,11 @@ sheep.tscn::PackedScene::7745009153368988576::1719330960::0::1::::<><>::res://en
 super_goblin.tscn::PackedScene::3599267470024553505::1719330960::0::1::::<><>::res://enemies/enemy.gd<>uid://b5014efaa7r0m::::res://misc/big_skull.tscn<>uid://dje8laapw1l3e::::res://misc/super_meat.tscn<>res://enemies/behaviors/follow_player.gd<>uid://qsatx80kalkk::::res://addons/img/Tiny Swords by Pixel Frog/Factions/Goblins/Troops/Torch/Red/Torch_Red.png<>uid://djhrv6qqeggbs::::res://addons/audio/Free Fantasy SFX Pack By TomMusic/Sword Impact Hit 2.ogg
 ::res://enemies/behaviors/::1719145476
 follow_player.gd::GDScript::-1::1719145476::0::1::::<>Node<>::
-::res://exports/::1719243222
+::res://exports/::1719366203
 ::res://exports/web/::1719331096
 index.apple-touch-icon.png::CompressedTexture2D::6333577022511410566::1719331067::1719243683::1::::<><>::
 index.icon.png::CompressedTexture2D::4594211203684358867::1719331067::1719243683::1::::<><>::
 index.png::CompressedTexture2D::2014512038385181349::1719331067::1719243683::1::::<><>::
-::res://exports/windows/::1719243747
 ::res://font/::1719243677
 Taroca Regular.ttf::FontFile::3756289596457795504::1688133184::1719243677::1::::<><>::
 ::res://misc/::1719331024
