@@ -39,7 +39,7 @@ func _process(delta:float) -> void:
 		index = 1
 	elif spawn_chance <= spawn_chances[2]:
 		index = 2
-	elif spawn_chance <= spawn_chances[2]:
+	elif spawn_chance <= spawn_chances[3]:
 		index = 3
 			
 	var creature_scene = creatures[index]
@@ -63,10 +63,10 @@ func _on_villager_spawn_body_exited(body):
 		
 func _on_goblin_spawn_body_entered(body):
 	if body == GameManager.player:
-		spawn_chances[0] = 0.05
+		spawn_chances[0] = 0
 		spawn_chances[1] = 0
-		spawn_chances[2] = 0.8
-		spawn_chances[3] = 0.15
+		spawn_chances[2] = 0.96
+		spawn_chances[3] = 0.04
 
 func _on_goblin_spawn_body_exited(body):
 	if body == GameManager.player:

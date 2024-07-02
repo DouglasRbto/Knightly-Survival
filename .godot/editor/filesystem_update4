@@ -1,6 +1,6 @@
-res://main.tscn
-res://systems/mob_spawner.gd
 res://enemies/goblin.tscn
+res://systems/mob_spawner.gd
+res://main.tscn
 res://ui/main_menu.tscn
 res://spell/ritual.tscn
 res://enemies/pawn.tscn

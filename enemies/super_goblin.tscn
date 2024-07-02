@@ -67,11 +67,12 @@ scale = Vector2(2.5, 2.5)
 motion_mode = 1
 script = ExtResource("1_qejt7")
 death_prefab = ExtResource("2_v0gjq")
-health = 25
+health = 50
 drop_chance = 1.0
 drop_items = Array[PackedScene]([ExtResource("4_ur08h")])
-damage = 10
-knockback_force = 20
+damage = 20
+experience = 20
+knockback_force = 10
 
 [node name="FollowPlayer" type="Node" parent="."]
 script = ExtResource("5_4ulxu")
