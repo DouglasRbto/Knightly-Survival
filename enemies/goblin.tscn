@@ -1,10 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://dlmeke0mux4in"]
+[gd_scene load_steps=15 format=3 uid="uid://dlmeke0mux4in"]
 
 [ext_resource type="Script" path="res://enemies/enemy.gd" id="1_epvn2"]
 [ext_resource type="PackedScene" uid="uid://du3a8htbpdq0r" path="res://misc/skull.tscn" id="2_1mfi5"]
 [ext_resource type="Script" path="res://enemies/behaviors/follow_player.gd" id="3_enwa2"]
 [ext_resource type="PackedScene" uid="uid://c53t06rtcuyb0" path="res://misc/meat.tscn" id="3_l5x1b"]
-[ext_resource type="PackedScene" uid="uid://dje8laapw1l3e" path="res://misc/super_meat.tscn" id="4_s61p2"]
 [ext_resource type="Texture2D" uid="uid://qsatx80kalkk" path="res://addons/img/Tiny Swords by Pixel Frog/Factions/Goblins/Troops/Torch/Red/Torch_Red.png" id="6_f8ccv"]
 [ext_resource type="AudioStream" uid="uid://djhrv6qqeggbs" path="res://addons/audio/Free Fantasy SFX Pack By TomMusic/Sword Impact Hit 2.ogg" id="7_w181h"]
 
@@ -68,8 +67,7 @@ motion_mode = 1
 script = ExtResource("1_epvn2")
 death_prefab = ExtResource("2_1mfi5")
 drop_chance = 0.2
-drop_items = Array[PackedScene]([ExtResource("3_l5x1b"), ExtResource("4_s61p2")])
-drop_chances = Array[float]([0.95, 0.05])
+drop_items = Array[PackedScene]([ExtResource("3_l5x1b")])
 damage = 5
 experience = 5
 knockback_force = 30

@@ -71,7 +71,7 @@ health = 25
 drop_chance = 1.0
 drop_items = Array[PackedScene]([ExtResource("4_ur08h")])
 damage = 10
-knockback_force = 10
+knockback_force = 20
 
 [node name="FollowPlayer" type="Node" parent="."]
 script = ExtResource("5_4ulxu")

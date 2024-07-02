@@ -8,7 +8,7 @@ func _ready() -> void:
 	game_ui = get_node("System/GameUI")
 
 func _input(event):
-	if event.is_action_released("ui_accept") or event.is_action_released("ui_cancel") and GameManager.is_game_paused == false:
+	if event.is_action_released("ui_cancel") and GameManager.is_game_paused == false:
 		var pause = pause_menu.instantiate()
 		add_child(pause)
 		
