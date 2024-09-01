@@ -3,14 +3,10 @@ extends Node2D
 
 @export var creatures: Array[PackedScene]
 @export var spawn_chances: Array[float]
-@export var mobs_per_minute: float = 50
+@export var mobs_per_minute: float = 60
 
-var spawn_chances_default_values: Array[float]
 var cooldown: float = 0
 @onready var path_follow_2d: PathFollow2D = %PathFollow2D
-
-func _ready() -> void:
-	spawn_chances_default_values = spawn_chances
 
 func _process(delta:float) -> void:
 	if GameManager.is_game_over: return
@@ -30,7 +26,7 @@ func _process(delta:float) -> void:
 	
 	if not result.is_empty(): return
 	
-	var index = 0
+	var index = null
 	var spawn_chance = randf()
 	
 	if spawn_chance <= spawn_chances[0]:
@@ -54,20 +50,20 @@ func get_point() -> Vector2:
 func _on_villager_spawn_body_entered(body):
 	if body == GameManager.player:
 		spawn_chances[0] = 0.2
-		spawn_chances[1] = 0.8
-		spawn_chances[2] = 0
+		spawn_chances[1] = 0.9
+		spawn_chances[2] = 1
+		spawn_chances[3] = 0
 
-func _on_villager_spawn_body_exited(body):
-	if body == GameManager.player:
-		spawn_chances = spawn_chances_default_values
-		
 func _on_goblin_spawn_body_entered(body):
 	if body == GameManager.player:
 		spawn_chances[0] = 0
 		spawn_chances[1] = 0
-		spawn_chances[2] = 0.96
-		spawn_chances[3] = 0.04
+		spawn_chances[2] = 0.98
+		spawn_chances[3] = 1
 
-func _on_goblin_spawn_body_exited(body):
+func _on_neutral_spawn_body_entered(body):
 	if body == GameManager.player:
-		spawn_chances = spawn_chances_default_values
+		spawn_chances[0] = 0.6
+		spawn_chances[1] = 0.8
+		spawn_chances[2] = 1
+		spawn_chances[3] = 0

@@ -2,7 +2,7 @@ extends Node
 
 var mob_spawner: MobSpawner
 var initial_spawn_rate: int = 20
-var spawn_rate_per_minute: int = 30
+var spawn_rate_per_minute: int = 40
 var wave_duration: float = 20
 var time: float = 0.0
 var break_intensity: float = 0.5

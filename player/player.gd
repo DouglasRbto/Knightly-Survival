@@ -60,7 +60,7 @@ func _process(delta: float) -> void:
 		attack()
 	if Input.is_action_pressed("cast_spell"):
 		cast_spell()
-	
+		
 	if ritual_cooldown >= ritual_interval and ritual_ready_indication.visible == false:
 		ritual_ready_indication.visible = true
 	

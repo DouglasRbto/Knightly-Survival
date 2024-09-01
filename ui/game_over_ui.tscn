@@ -66,7 +66,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(309.5, 71)]
+"values": [Vector2(373.5, 71)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -90,7 +90,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(425, 513)]
+"values": [Vector2(537, 513)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -102,7 +102,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(473, 556)]
+"values": [Vector2(537, 584)]
 }
 
 [sub_resource type="Animation" id="Animation_jys2t"]
@@ -129,7 +129,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(0.5, 1),
 "update": 0,
-"values": [Vector2(309.5, -108), Vector2(309.5, 42)]
+"values": [Vector2(373.5, -108), Vector2(373.5, 42)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -153,7 +153,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(0.5, 1),
 "update": 0,
-"values": [Vector2(-206, 478), Vector2(473, 478)]
+"values": [Vector2(-206, 478), Vector2(537, 478)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -165,7 +165,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(0.5, 1),
 "update": 0,
-"values": [Vector2(1152, 556), Vector2(473, 556)]
+"values": [Vector2(1152, 556), Vector2(537, 556)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_468t1"]
@@ -190,10 +190,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 309.5
-offset_top = 71.0
-offset_right = 842.5
-offset_bottom = 163.0
+offset_left = -266.5
+offset_top = 42.0
+offset_right = 266.5
+offset_bottom = 134.0
 grow_horizontal = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_ox5ye")
 metadata/_edit_group_ = true
@@ -318,10 +318,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 425.0
-offset_top = 513.0
-offset_right = 631.0
-offset_bottom = 577.0
+offset_left = -103.0
+offset_top = -242.0
+offset_right = 103.0
+offset_bottom = -178.0
 grow_horizontal = 2
 grow_vertical = 0
 texture_normal = ExtResource("4_ilf3o")
@@ -336,10 +336,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 473.0
-offset_top = 556.0
-offset_right = 678.999
-offset_bottom = 620.0
+offset_left = -103.0
+offset_top = -164.0
+offset_right = 102.999
+offset_bottom = -100.0
 grow_horizontal = 2
 grow_vertical = 0
 texture_normal = ExtResource("7_w5l5u")

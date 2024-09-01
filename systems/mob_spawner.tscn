@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cged5t2ypcewe"]
+[gd_scene load_steps=7 format=3 uid="uid://cged5t2ypcewe"]
 
 [ext_resource type="Script" path="res://systems/mob_spawner.gd" id="1_n4lpu"]
 [ext_resource type="PackedScene" uid="uid://dlmeke0mux4in" path="res://enemies/goblin.tscn" id="2_2l6hn"]
 [ext_resource type="PackedScene" uid="uid://bd3aqjrrju1id" path="res://enemies/pawn.tscn" id="3_2qigb"]
 [ext_resource type="PackedScene" uid="uid://dil0f0ucxqevw" path="res://enemies/sheep.tscn" id="4_ldf5n"]
+[ext_resource type="PackedScene" uid="uid://brjrn6h7g33qr" path="res://enemies/super_goblin.tscn" id="5_vh0jc"]
 
 [sub_resource type="Curve2D" id="Curve2D_56xjj"]
 _data = {
@@ -15,12 +16,12 @@ point_count = 5
 position = Vector2(574, 379)
 scale = Vector2(0.721473, 0.806328)
 script = ExtResource("1_n4lpu")
-creatures = Array[PackedScene]([ExtResource("4_ldf5n"), ExtResource("3_2qigb"), ExtResource("2_2l6hn")])
-spawn_chances = Array[float]([0.6, 0.8, 1.0])
+creatures = Array[PackedScene]([ExtResource("4_ldf5n"), ExtResource("3_2qigb"), ExtResource("2_2l6hn"), ExtResource("5_vh0jc")])
+spawn_chances = Array[float]([0.6, 0.8, 1.0, 0.0])
 
 [node name="Path2D" type="Path2D" parent="."]
-position = Vector2(0.510763, 16.7635)
-scale = Vector2(1.51084, 1.57805)
+position = Vector2(94.7045, 40.9421)
+scale = Vector2(1.42463, 1.2374)
 curve = SubResource("Curve2D_56xjj")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]

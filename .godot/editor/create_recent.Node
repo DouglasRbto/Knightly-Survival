@@ -1,5 +1,6 @@
-HBoxContainer
+TileMapLayer
 Control
+HBoxContainer
 Container
 HSlider
 HScrollBar
@@ -12,4 +13,3 @@ TextureRect
 AudioStreamPlayer
 Node
 AudioStreamPlayer2D
-AnimatedSprite2D

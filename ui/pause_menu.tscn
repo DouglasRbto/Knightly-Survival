@@ -134,7 +134,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(450, 204)]
+"values": [Vector2(514, 204)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -208,6 +208,18 @@ tracks/7/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
 }
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Settings:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(603, 170)]
+}
 
 [sub_resource type="Animation" id="Animation_82s0i"]
 resource_name = "Settings"
@@ -221,7 +233,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0.5, 1),
 "transitions": PackedFloat32Array(0.5, 1),
 "update": 0,
-"values": [Vector2(539, 170), Vector2(384, 169.5)]
+"values": [Vector2(603, 170), Vector2(448, 169.5)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -308,7 +320,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0.3, 1),
 "transitions": PackedFloat32Array(0.5, 1),
 "update": 0,
-"values": [Vector2(450, 302), Vector2(450, 204)]
+"values": [Vector2(514, 302), Vector2(514, 204)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -344,7 +356,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0.3, 1),
 "transitions": PackedFloat32Array(0.5, 1),
 "update": 0,
-"values": [Vector2(508, 82), Vector2(309.5, 82)]
+"values": [Vector2(572, 82), Vector2(373.5, 82)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -406,9 +418,9 @@ color = Color(0, 0, 0, 0.509804)
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 309.5
+offset_left = -266.5
 offset_top = 82.0
-offset_right = 842.5
+offset_right = 266.5
 offset_bottom = 174.0
 grow_horizontal = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_ox5ye")
@@ -436,10 +448,10 @@ horizontal_alignment = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 450.0
+offset_left = 514.0
 offset_top = 204.0
-offset_right = 702.0
-offset_bottom = 478.0
+offset_right = -514.0
+offset_bottom = -190.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_hnj46")
@@ -495,10 +507,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 2267.0
-offset_top = 1142.0
-offset_right = 2341.0
-offset_bottom = 1539.0
+offset_left = -37.0
+offset_top = -190.0
+offset_right = 37.0
+offset_bottom = 207.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_c3fpx")
